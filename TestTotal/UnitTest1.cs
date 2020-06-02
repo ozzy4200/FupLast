@@ -9,9 +9,16 @@ namespace TestTotal
         [TestMethod]
         public void TestMethod1()
         {
-            // 
-            var result = TransportCalc.Total("1015");
+            // Tjekker om result er det samme som expected result
+            var result = TransportCalc.Total("10 15");
             Assert.AreEqual(25, result);
+        }
+
+        [TestMethod]
+        public void TestMethod2()
+        {
+            var result = TransportCalc.Gennemsnit(300, 22.5);
+            Assert.AreEqual(7.5, result);
         }
     }
 }

@@ -5,7 +5,11 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FupLib", "FupLib\FupLib.csproj", "{C29424FA-508D-47F4-90AD-186B47F9E505}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTotal", "TestTotal\TestTotal.csproj", "{69FD6C3D-CAB0-480D-A12E-FCAD91EAD25F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestTotal", "TestTotal\TestTotal.csproj", "{69FD6C3D-CAB0-480D-A12E-FCAD91EAD25F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCPEchoServer", "TCPEchoServer\TCPEchoServer.csproj", "{6F6B2A2C-63E0-4C03-A8D4-ABC47A155783}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoApi", "TodoApi\TodoApi.csproj", "{AA553CF8-834F-48CA-ACDD-525DA918D1C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{69FD6C3D-CAB0-480D-A12E-FCAD91EAD25F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69FD6C3D-CAB0-480D-A12E-FCAD91EAD25F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69FD6C3D-CAB0-480D-A12E-FCAD91EAD25F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F6B2A2C-63E0-4C03-A8D4-ABC47A155783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F6B2A2C-63E0-4C03-A8D4-ABC47A155783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F6B2A2C-63E0-4C03-A8D4-ABC47A155783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F6B2A2C-63E0-4C03-A8D4-ABC47A155783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA553CF8-834F-48CA-ACDD-525DA918D1C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA553CF8-834F-48CA-ACDD-525DA918D1C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA553CF8-834F-48CA-ACDD-525DA918D1C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA553CF8-834F-48CA-ACDD-525DA918D1C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

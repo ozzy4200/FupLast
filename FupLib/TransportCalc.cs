@@ -7,24 +7,29 @@ namespace FupLib
 {
     public class TransportCalc
     {
-        public static int Gennemsnit(int antalKm, int antalLiter)
+        public static double Gennemsnit(int antalKm, double antalLiter)
         {
+            if (antalKm > 2000 || antalKm < 0)
+            {
+                throw new ArgumentOutOfRangeException();
+            }
             // forbrug beregning bliver returneret
-            return (antalKm / antalLiter) * 100;
+            return (antalLiter / antalKm) * 100;
         }
 
         public static int Total(string transporter)
         {
             // split den i to, derefter lave dem til variabler (split1, split2) også udregn summen
             transporter.Split(" ", 2, StringSplitOptions.None);
-            string [] s = transporter.Split(" ");
+            string[] s = transporter.Split(" ");
+            // Her konverterer vi vores string array til et int array så vi senere kan udregne 
+            int[] myInts = Array.ConvertAll(s, int.Parse);
             int sum = 0;
-            Convert.ToInt32(transporter);
-            foreach (string i in s)
+            // I dett forloop tæller vi et tal af gangen i arrayet og lægger dem sammen
+            for (int i = 0; i < myInts.Length; i++)
             {
-                sum += i;
+                sum += myInts[i];
             }
-
             return sum;
 
         }
